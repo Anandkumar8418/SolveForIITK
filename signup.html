@@ -27,30 +27,31 @@
         <form>
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" placeholder="Enter username..." required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" placeholder="Enter Email..." required>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" placeholder="Enter password..." required>
             </div>
-            <div class="form-group">
-                <div class="form">
+            <div class="form">
 
-                    <div class="otpverify">
-                        <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your Email...">
-                        <button class="btn" id="otp-btn">Verify</button>
-                    </div>
-
-                    <button onclick="sendOTP()" class="btn">Send OTP</button>
+                <div class="otpverify">
+                    <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your Email...">
+                    <button class="btn" type="button" id="otp-btn">Verify</button>
                 </div>
+
+                <button onclick="sendOTP()" type="button" class="btn">Send OTP</button>
+
+
+
+
 
                 <script src="./index.js"></script>
             </div>
-            <button onclick="sendOTP()" type="sendotp">Send OTP</button>
             <button type="submit">Sign Up</button>
         </form>
 

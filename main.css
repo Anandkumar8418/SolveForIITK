@@ -77,19 +77,21 @@ label {
     display: block;
     margin-bottom: 5px;
     font-size: 20px;
-    
+
     color: #aeff00;
 }
 
 input[type="text"],
-input[type="password"],input[type="email"] {
+input[type="password"],
+input[type="email"] {
     width: 97%;
     padding: 10px;
     font-size: 20px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
-input[type="otp"]{
+
+input[type="otp"] {
     width: 10%;
     padding: 10px;
     font-size: 20px;
@@ -111,6 +113,7 @@ button[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 button[type="sendotp"] {
     display: block;
     width: 10%;
@@ -126,18 +129,40 @@ button[type="sendotp"] {
     border-radius: 4px;
     cursor: pointer;
 }
-#hidden{
+
+#hidden {
     display: none;
 }
+
 button[type="submit"]:hover {
     background-color: #39683b;
     color: rgb(240, 137, 137);
 }
+
 button[type="sendotp"]:active {
     background-color: #4CAF50;
     color: white;
 }
+
 button[type="sendotp"]:hover {
     background-color: #39683b;
     color: rgb(240, 137, 137);
+}
+
+input {
+    padding: 0.6rem;
+}
+
+.btn {
+    padding: 0.5rem 0.8rem;
+    background-color: violet;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.otpverify {
+    display: none;
+    margin-top: 10px;
 }
