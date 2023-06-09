@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Template</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="mainbut"><a href="#">Home</a></li>
+                <li class="mainbut"><a href="#">About</a></li>
+                <li class="mainbut"><a href="#">Adding 1</a></li>
+                <li class="mainbut"><a href="#">Adding 2</a></li>
+                <div class="registering">
+                    <li class="buttons"><a href="login.html">Log In</a></li>
+                    <li class="buttons"><a href="signup.html">Sign Up</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainbody">
+        <h1>Sign Up</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <div class="form">
+
+                    <div class="otpverify">
+                        <input type="text" id="otp_inp" placeholder="Enter the OTP sent to your Email...">
+                        <button class="btn" id="otp-btn">Verify</button>
+                    </div>
+
+                    <button onclick="sendOTP()" class="btn">Send OTP</button>
+                </div>
+
+                <script src="./index.js"></script>
+            </div>
+            <button onclick="sendOTP()" type="sendotp">Send OTP</button>
+            <button type="submit">Sign Up</button>
+        </form>
+
+
+    </main>
+    <script src="signup.js"></script>
+</body>
+
+</html>
